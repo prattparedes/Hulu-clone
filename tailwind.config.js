@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'hulubg': '#06202A'
-      }
+      },
+      screens: {
+        "3xl": '2000px',
+      },
     },
   },
   variants: {
