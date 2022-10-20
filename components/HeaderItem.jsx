@@ -2,10 +2,10 @@ import React from "react";
 
 function HeaderItem({ Icon, title }) {
   return (
-    <>
-      <Icon className="h-50 w-50 text-blue-500" />
-      <p className="my-50" >{title}</p>
-    </>
+    <div className="flex flex-col items-center cursor-pointer group w-12 sm:w-20 hover:text-white">
+      <Icon className="h-8 mb-1" />
+      <p className="opacity-100 group-hover:opacity-100 tracking-widest font-medium" >{title}</p>
+    </div>
   );
 }
 

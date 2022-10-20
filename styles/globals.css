@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    base {
-        background-color: red;
+@layer base {
+    body {
+        @apply text-gray-300;
+        background-color: #06202A;
     }
 }

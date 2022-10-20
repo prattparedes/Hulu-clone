@@ -12,7 +12,6 @@ export default function Home() {
 
       {/* Header */}
       <Header />
-      <h1 className='red w-10 h-8 underline'>HOLA MUNDO</h1>
       {/* Nav */}
 
       {/* Results */}
