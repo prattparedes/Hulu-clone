@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       animation: ['group-hover'],
       textColor: ['active', 'hover', 'first'],
+      fontWeight: ['group-hover'],
       padding: ['responsive', 'last', 'first'],
     },
   },
