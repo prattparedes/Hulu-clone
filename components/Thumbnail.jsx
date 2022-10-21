@@ -2,12 +2,15 @@ import Image from "next/image";
 import React from "react";
 import { HandThumbUpIcon } from "@heroicons/react/24/outline";
 import { forwardRef } from "react";
+import { useRouter } from "next/router";
 
 const Thumbnail = forwardRef(({ result }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
+  const router = useRouter();
   Thumbnail.displayName = "Thumbnail";
+  
   return (
-    <div ref={ref} className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
+    <div ref={ref} onClick={() => router.push(`https://www.themoviedb.org/movie/${result.id}`)} className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
       <Image
         layout="responsive"
         src={
